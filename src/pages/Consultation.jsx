@@ -12,7 +12,15 @@ import React, { useState } from 'react';
           <Form>
             <Form.Group controlId="formDate">
               <Form.Label>Date et Heure</Form.Label>
-              <DatePicker selected={date} onChange={(date) => setDate(date)} showTimeSelect timeFormat="HH:mm" timeIntervals={15} dateFormat="Pp" />
+              <DatePicker
+selected={date}
+onChange={(date) => setDate(date)}
+showTimeSelect
+timeFormat="HH:mm"
+timeIntervals={15}
+dateFormat="Pp"
+            className="form-control"
+/>
             </Form.Group>
             <Button variant="primary" type="submit" className="mt-3">
               Réserver
