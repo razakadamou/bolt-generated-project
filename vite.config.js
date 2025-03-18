@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     open: true,
-    port: 3003, // Specify a different port
+    port: 3000, // Specify a different port
   },
   resolve: {
     alias: {
