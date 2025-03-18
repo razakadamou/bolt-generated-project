@@ -2,6 +2,30 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "name": "Launch Extension",
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm",
+            "request": "launch",
+            "type": "extensionHost"
+        },
+        {
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "name": "Launch Extension",
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm",
+            "request": "launch",
+            "type": "extensionHost"
+        },
+        {
             "name": "Launch Edge",
             "request": "launch",
             "type": "msedge",
@@ -9,7 +33,7 @@
             "webRoot": "${workspaceFolder}"
         },
         {
-            "type": "pwa-msedge",
+            "type": "msedge",
             "name": "Launch Microsoft Edge",
             "request": "launch",
             "runtimeArgs": [
@@ -21,22 +45,13 @@
             }
         },
         {
-            "type": "pwa-msedge",
+            "type": "msedge",
             "name": "Launch Microsoft Edge in headless mode",
             "request": "launch",
             "runtimeArgs": [
                 "--headless",
                 "--remote-debugging-port=9222"
             ],
-            "url": "c:\\Users\\pc\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.8\\out\\startpage\\index.html", // Provide your project's url to finish configuring
-            "presentation": {
-                "hidden": true
-            }
-        },
-        {
-            "type": "vscode-edge-devtools.debug",
-            "name": "Open Edge DevTools",
-            "request": "attach",
             "url": "c:\\Users\\pc\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.8\\out\\startpage\\index.html", // Provide your project's url to finish configuring
             "presentation": {
                 "hidden": true
@@ -48,14 +63,14 @@
             "name": "Launch Edge Headless and attach DevTools",
             "configurations": [
                 "Launch Microsoft Edge in headless mode",
-                "Open Edge DevTools"
+                "Launch Microsoft Edge"
             ]
         },
         {
             "name": "Launch Edge and attach DevTools",
             "configurations": [
                 "Launch Microsoft Edge",
-                "Open Edge DevTools"
+                "Launch Microsoft Edge in headless mode"
             ]
         }
     ]
