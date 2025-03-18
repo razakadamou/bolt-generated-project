@@ -1,8 +1,12 @@
 import React from 'react';
-    import ReactDOM from 'react-dom';
-    import App from './App';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
+import Blog from './pages/Blog';
+import Commande from './pages/Commande';
+import Consultation from './pages/Consultation';
+import Contact from './pages/Contact';
+import Partenaires from './pages/Partenaires';
 
-<<<<<<< HEAD
 const App = () => (
   <Router>
     <Switch>
@@ -15,9 +19,10 @@ const App = () => (
     </Switch>
   </Router>
 );
-}
 
 export default App;
-=======
+
+    import ReactDOM from 'react-dom';
+    import App from './App';
+
     ReactDOM.render(<App />, document.getElementById('root'));
->>>>>>> parent of f603327 (Refactor code structure and dependencies)
